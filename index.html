@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Week Day 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #FFB6C1, #FF69B4); /* Soft pink gradient */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            animation: backgroundAnimation 10s ease infinite; /* Smooth background color transition */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        header {
+            background-color: rgba(255, 99, 131, 0.9); /* Slightly transparent pink */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+            min-height: 100vh; /* Ensure content takes up at least the full viewport height */
+        }
+
+        .message {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #FF1493; /* Deep pink */
+        }
+
+        .gift {
+            font-size: 20px;
+            color: #FFD700; /* Gold */
+            margin-bottom: 20px;
+        }
+
+        .poem {
+            font-size: 18px;
+            margin-top: 30px;
+            font-style: italic;
+            color: #FFDAB9; /* Light peach */
+        }
+
+        .song-player {
+            margin-top: 20px;
+        }
+
+        .image-container {
+            margin-top: 30px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05); /* Subtle zoom effect on hover */
+        }
+
+        .footer {
+            font-size: 16px;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background: linear-gradient(135deg, #FFB6C1, #FF69B4); }
+            50% { background: linear-gradient(135deg, #FF6347, #FF1493); }
+            100% { background: linear-gradient(135deg, #FFB6C1, #FF69B4); }
+        }
+
+        /* Floating hearts animation */
+        .heart {
+            position: absolute;
+            color: #FF1493;
+            font-size: 2rem;
+            animation: floatHearts 6s ease-in infinite;
+        }
+
+        @keyframes floatHearts {
+            0% {
+                transform: translateY(0) rotate(0);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-200px) rotate(180deg);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+                opacity: 1;
+            }
+        }
+
+        .heart:nth-child(odd) {
+            animation-duration: 8s;
+        }
+
+        .heart:nth-child(even) {
+            animation-duration: 10s;
+        }
+
+        /* Lyrics floating animation */
+        .lyrics {
+            position: absolute;
+            font-size: 1.5rem;
+            color: #FFD700;
+            font-weight: bold;
+            white-space: nowrap;
+            opacity: 0;
+            animation: floatLyrics 15s linear infinite;
+        }
+
+        @keyframes floatLyrics {
+            0% { left: -100%; opacity: 1; }
+            100% { left: 100%; opacity: 1; }
+        }
+
+        /* Control the speed of the lyrics based on the duration */
+        .lyrics:nth-child(1) { animation-duration: 20s; }
+        .lyrics:nth-child(2) { animation-duration: 25s; }
+        .lyrics:nth-child(3) { animation-duration: 30s; }
+        .lyrics:nth-child(4) { animation-duration: 35s; }
+        .lyrics:nth-child(5) { animation-duration: 40s; }
+        .lyrics:nth-child(6) { animation-duration: 45s; }
+        .lyrics:nth-child(7) { animation-duration: 50s; }
+        .lyrics:nth-child(8) { animation-duration: 55s; }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Happy Valentine's Week!</h1>
+</header>
+
+<div class="container">
+    <p class="message">Hello love, the Valentine week has started! Here's your gift for Day :</p>
+
+    <p class="gift">A beautiful song to start the evening with some love and joy. Enjoy!</p>
+
+    <!-- Romantic Poem in English -->
+    <p class="poem">In the smile of your face, my whole world resides,<br>
+    Every moment, I want to look at you, this is my greatest desire.<br>
+    samjhi theoderon.</p>
+
+    <!-- Audio Player for "Adiye" song -->
+    <div class="song-player">
+        <audio id="song" controls>
+            <source src="one lobe.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="image-container">
+        <p>Here's a special picture for you. Feel free to insert your photo here:</p>
+        <img src="1.jpg" alt="Your Valentine Gift">
+    </div>
+
+    <p class="footer">आहा क बिना स्वर्ग सेहो नीक नञि, always.</p>
+</div>
+
+<!-- Floating lyrics -->
+<div class="lyrics" style="top: 20%;">Billo, gutt 'te paranda tera karda kamaal ni</div>
+<div class="lyrics" style="top: 30%;">Billiyan billauri akkhan kardi sawaal</div>
+<div class="lyrics" style="top: 40%;">Ture matak-matak ni tu hirni di chaal ni</div>
+<div class="lyrics" style="top: 50%;">Gallhan di laali ne taan keete bure haal</div>
+<div class="lyrics" style="top: 60%;">Jadon nikle gharon ni, billo, hoke taiyaar</div>
+<div class="lyrics" style="top: 70%;">Tere pichhe-pichhe ghummdi aa mundeyan di daar</div>
+<div class="lyrics" style="top: 80%;">Tikkhe nakk 'ch koka ni tera karda shikaar</div>
+<div class="lyrics" style="top: 90%;">Jutti kadhvin 'te fabda aa suit-salwar</div>
+<div class="lyrics" style="top: 100%;">Tu akkhan meech yaari laa-laa, billo, jatt de naal ni</div>
+<div class="lyrics" style="top: 110%;">Chakkan guarantee teri, chal mere naal ni</div>
+<div class="lyrics" style="top: 120%;">Dil da clean munda, chalda chaal nahi</div>
+<div class="lyrics" style="top: 130%;">Ikko gall maadi bas, chalda faraar</div>
+
+<script>
+    // JavaScript to trigger lyrics floating when the song plays and pause when the song is paused
+    const audioElement = document.getElementById('song');
+    const lyrics = document.querySelectorAll('.lyrics');
+
+    audioElement.addEventListener('play', () => {
+        // Start the floating animation when the song plays
+        lyrics.forEach(lyric => {
+            lyric.style.animationPlayState = 'running';
+            lyric.style.opacity = 1; // Make lyrics visible
+        });
+    });
+
+    audioElement.addEventListener('pause', () => {
+        // Pause the floating animation when the song is paused
+        lyrics.forEach(lyric => {
+            lyric.style.animationPlayState = 'paused';
+            lyric.style.opacity = 0.5; // Make lyrics semi-visible while paused
+        });
+    });
+
+    audioElement.addEventListener('ended', () => {
+        // Reset the lyrics when the song ends
+        lyrics.forEach(lyric => {
+            lyric.style.animationPlayState = 'paused';
+            lyric.style.opacity = 0; // Hide lyrics when the song ends
+        });
+    });
+</script>
+
+</body>
+</html>
